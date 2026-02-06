@@ -3,9 +3,7 @@
 DWORD GetProcId(std::u16string processName)
 {
         HANDLE hProcessSnap;
-        HANDLE hProcess;
         PROCESSENTRY32W pe32;
-        DWORD dwPriorityClass;
         DWORD pid = 0;
 
         hProcessSnap = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
